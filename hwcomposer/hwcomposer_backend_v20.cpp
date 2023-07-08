@@ -353,7 +353,7 @@ HwComposerBackend_v20::refreshRate()
 
     value = (1000000000.0 / value);
 
-    qDebug() << "Refresh rate: " << ((value > 0 && value <= 1000.0) ? value : 60.0);
+    qDebug() << "Refresh rate raw: " << value;
 
     // make sure the value is "reasonable", otherwise fallback to 60.0.
     return (value > 0 && value <= 1000.0) ? value : 60.0;
