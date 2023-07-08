@@ -162,6 +162,7 @@ void HwComposerContext::sleepDisplay(bool sleep)
 
 qreal HwComposerContext::refreshRate() const
 {
+    qDebug() << "FPS: " << fps;
     return fps;
 }
 
